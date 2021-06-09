@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/coffee3"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+
+        tools:context=".MainActivity">
+
+
+        <EditText
+            android:id="@+id/PersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textColorHighlight="@color/black"
+            android:textColor="@color/black"
+            android:textColorLink="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="QUANTITY"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:shadowDy="10.0"
+            android:shadowDx="10.0"
+            android:shadowRadius="10.0"
+            android:shadowColor="#00FFF7"
+            tools:layout_editor_absoluteX="31dp"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteY="28dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/minus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="8dp"
+            android:onClick="decrement"
+            android:text="-"
+            android:textSize="30sp"
+            app:backgroundTint="#8FEF6D" />
+
+
+
+        <TextView
+            android:id="@+id/show_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="#dd0000"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:shadowDy="5.0"
+            android:shadowDx="5.0"
+            android:shadowRadius="5.0"
+            android:shadowColor="#A9FB54"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/plus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment"
+            android:text="+"
+            android:textSize="30sp"
+            app:backgroundTint="#A9FB54" />
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/toppings_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="TOPPINGS"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:shadowDy="10.0"
+            android:shadowDx="10.0"
+            android:shadowRadius="10.0"
+            android:shadowColor="#00FFF7"
+            tools:layout_editor_absoluteX="31dp"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteY="28dp" />
+        <CheckBox
+            android:id="@+id/whippedcream_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="#dd0000"
+            android:paddingLeft="24dp"
+            android:shadowDy="10.0"
+            android:shadowDx="10.0"
+            android:shadowRadius="10.0"
+            android:shadowColor="#A9FB54"
+            android:text="Whipped Cream" />
+        <CheckBox
+            android:id="@+id/chocolate_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="#dd0000"
+            android:paddingLeft="20dp"
+            android:shadowDy="10.0"
+            android:shadowDx="10.0"
+            android:shadowRadius="10.0"
+            android:shadowColor="#A9FB54"
+            android:text="Chocolate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Order Summary"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:shadowDy="5.0"
+            android:shadowDx="5.0"
+            android:shadowRadius="5.0"
+            android:shadowColor="#00FFF7"
+            android:textSize="40sp" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/price_text_view"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:textColor="@color/teal_200"-->
+    <!--        android:text="$0" />-->
+
+        <TextView
+            android:id="@+id/order_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:onClick="submitOrder"
+            android:paddingBottom="30dp"
+            android:layout_gravity="center"
+            android:textColor="#8FEF6D"
+            android:shadowDy="5.0"
+            android:shadowDx="5.0"
+            android:shadowRadius="5.0"
+            android:shadowColor="#FF0909"
+            android:text="" />
+
+        <Button
+            android:id="@+id/order_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:onClick="submitOrder"
+            android:text="ORDER"
+            android:textSize="60dp"
+            app:backgroundTint="#FF0909" />
+        <Button
+        android:id="@+id/payment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="6dp"
+        android:onClick="payHere"
+        android:text="PAY HERE"
+        android:textSize="25sp"
+        app:backgroundTint="#004160" />
+<!--        <TextView-->
+<!--            android:id="@+id/payment_message"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="10sp"-->
+<!--            android:onClick="payHere"-->
+<!--            android:paddingBottom="30dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textColor="#8FEF6D"-->
+<!--            android:shadowDy="5.0"-->
+<!--            android:shadowDx="5.0"-->
+<!--            android:shadowRadius="5.0"-->
+<!--            android:shadowColor="#FF0909"-->
+<!--            android:text="" />-->
+    </LinearLayout>
+</ScrollView>
